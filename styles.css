@@ -607,3 +607,24 @@ h3 {
     flex-direction: column;
   }
 }
+/* Final navbar logo fix */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+}
+
+.brand .brand-logo {
+  width: 170px !important;
+  height: auto !important;
+  max-height: 64px;
+  object-fit: contain !important;
+  border-radius: 0;
+}
+
+@media (max-width: 520px) {
+  .brand .brand-logo {
+    width: 135px !important;
+    max-height: 54px;
+  }
+}
